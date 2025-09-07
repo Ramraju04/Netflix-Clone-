@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav">
+            <div class="logo">NETFLIX</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <div class="profile">
+                <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Profile">
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Stranger Things</h1>
+            <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments and supernatural forces.</p>
+            <div class="hero-buttons">
+                <button class="play-btn">▶ Play</button>
+                <button class="info-btn">ℹ More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="content">
+        <section class="row">
+            <h2>Trending Now</h2>
+            <div class="movie-list" id="trending">
+                <!-- Movies will be loaded here -->
+            </div>
+        </section>
+
+        <section class="row">
+            <h2>Popular Movies</h2>
+            <div class="movie-list" id="popular">
+                <!-- Movies will be loaded here -->
+            </div>
+        </section>
+
+        <section class="row">
+            <h2>New Releases</h2>
+            <div class="movie-list" id="new-releases">
+                <!-- Movies will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Movie Modal -->
+    <div class="modal" id="movie-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div class="modal-info">
+                <span id="modal-year"></span>
+                <span id="modal-rating"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
